@@ -1,13 +1,120 @@
+/* основной цвет текста #757575; */
+/* Вторичный текст #212121 */
+/* текст акцента #2196F3; */
+/* текст заголовка первой секции #FFFFFF; */
+/* текст мейла и телефона в футере color: rgba(255, 255, 255, 0.6)  */
+
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text: #2196f3;
+  --primery-white-color: #ffffff;
+  --primery-bc-color: #e5e5e5;
+  --secondary-bc-color: #2f303a;
+}
+
 .page {
-  color: #212121;
+  background-color: var(--primery-bc-color);
+  color: var(--primery-text-color);
+}
+
+.list {
+  list-style: none;
 }
 
 .page-header {
-  background-color: #ffffff;
+  background-color: var(--primery-white-color);
 }
 
-/* основной цвет текста #212121; */
-/* текст акцента #2196F3; */
-/* текст заголовка первой секции #FFFFFF */
-/* текст параграфов и номера телефона в хедере #757575; */
-/* текст мейла и телефона в футере color: rgba(255, 255, 255, 0.6)  */
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text);
+}
+
+.site-nav .link.current {
+  color: var(--accent-text);
+}
+
+/* Auth-nav */
+.auth-nav .link {
+  color: var(--primery-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-text);
+}
+/* Hero */
+.hero {
+  background-color: var(--secondary-bc-color);
+}
+
+.hero-title {
+  color: var(--primery-white-color);
+}
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+.features .title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+.team-list {
+  background-color: #f5f4fa;
+}
+.team-title {
+  color: var(--title-text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-bc-color);
+}
+
+.address-items .item {
+  color: var(--primery-white-color);
+}
+
+.address-items .item-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-items .item-link:hover,
+.address-items .item-link:focus {
+  color: var(--accent-text);
+}
+
+/* Button */
+
+.button {
+  color: var(--primery-white-color);
+  background-color: #2196f3;
+}
+
+/* Portfolio */
+
+.main {
+  background-color: var(--primery-bc-color);
+}
+
+.portfolio .portfolio-button {
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+}
+.portfolio .portfolio-button:hover,
+.portfolio .portfolio-button:focus {
+  background-color: var(--accent-text);
+  color: var(--primery-white-color);
+}
+
+.portfolio-work .title {
+  color: var(--title-text-color);
+}
